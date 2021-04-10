@@ -25,7 +25,16 @@ Finished separating MVP and Stretch, set up backend repo. Working on permissions
 ```RONALDs-MacBook-Pro-2 dev/restauranter-backend ‹master*› » npm install --global belly
 npm WARN checkPermissions Missing write access to /usr/local/lib/node_modules/belly
 npm WARN checkPermissions Missing write access to /usr/local/lib/node_modules
+```
 
 ## Sat Apr 10 14:28:03 EDT 2021
+
+Tested the belly library with a test commit:
+
+`belly c -m "test belly library"`
+
+It successfully committed to Github.
+
+
 
 

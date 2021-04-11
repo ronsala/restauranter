@@ -132,3 +132,6 @@ RONALDs-MacBook-Pro-2 dev/restauranter-backend ‹menu*› » rails webpacker:in
 
 Yay! I'm on Rails!
 
+Changed repo name to restauranter-backend.
+
+

@@ -134,4 +134,9 @@ Yay! I'm on Rails!
 
 Changed repo name to restauranter-backend.
 
+Looking into db, as I don't see sections being created. Following [https://www.postgresqltutorial.com/psql-commands/](https://www.postgresqltutorial.com/psql-commands/)
+
+I can't create a section, either from seeds or from console. I can create a menu. 
+
+After experimenting in console, it looks like AR won't accept records that don't have a valid ID from the model they belong to.
 

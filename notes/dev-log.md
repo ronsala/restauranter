@@ -140,3 +140,5 @@ I can't create a section, either from seeds or from console. I can create a menu
 
 After experimenting in console, it looks like AR won't accept records that don't have a valid ID from the model they belong to.
 
+Found this cool trick [https://aneta-bielska.github.io/blog/rails-c-5-ways-to-get-pretty-output.html](https://aneta-bielska.github.io/blog/rails-c-5-ways-to-get-pretty-output.html) and put it to immediate use showing my sections in the rails console beau·ti·ful·ly with pry.
+

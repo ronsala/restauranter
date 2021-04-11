@@ -12,6 +12,13 @@ Item.destroy_all
 
 menu = Menu.create
 
-['Starters & Sides', 'Entrees', 'Beverages', 'Desserts'].each do |s|
-  Section.create(name: s, menu_id: menu.id)
-end
+Section.create(name: 'Starters & Sides', menu_id: menu.id)
+
+Item.create(
+  [
+    { section_id: Section.last.id, name: 'Blooming Onion', price: 5, desc: 'Crispy bouquet of onion deep fried in beef tallow.' }
+  ]
+)
+Section.create(name: 'Entrees', menu_id: menu.id)
+Section.create(name: 'Beverages', menu_id: menu.id)
+Section.create(name: 'Desserts', menu_id: menu.id)

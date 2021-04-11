@@ -104,3 +104,4 @@ error: 'restauranter-backend/' does not have a commit checked out
 fatal: adding files failed
 ```
 
+Fixed it by removing a redundant subfolder.

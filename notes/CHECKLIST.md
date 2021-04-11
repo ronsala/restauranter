@@ -14,7 +14,7 @@ Restauranter: An open source restaurant management web app.
 * [ ] arrange delivery
 * [ ] check out
 
-#### Stretch
+#### Later
 
 * [ ] get info and directions
 * [ ] make a reservation
@@ -40,7 +40,7 @@ Restauranter: An open source restaurant management web app.
 * [ ] MenuContainer
 * [ ] OrderContainer
 
-#### Stretch
+#### Later
 
 * [ ] ReservationContainer
 
@@ -54,7 +54,7 @@ Restauranter: An open source restaurant management web app.
 * [ ] Checkout
 * [ ] Delivery
 
-#### Stretch
+#### Later
 
 * [ ] Reservations
 * [ ] DirectionsAndInfo
@@ -71,7 +71,7 @@ Restauranter: An open source restaurant management web app.
 * [ ] /delivery
 * [ ] /checkout
 
-### Stretch
+### Later
 
 * [ ] /directions-and-info
 * [ ] /signup
@@ -86,7 +86,10 @@ Restauranter: An open source restaurant management web app.
 * [ ] Make use of async actions and `redux-thunk` middleware to send data to and receive data from a server
 
 * [ ] Your Rails API should handle the data persistence with a database. You should be using `fetch()` within your actions to GET and POST data from your API - do not use jQuery methods.
-* [ ] 
+  * [ ] Make models and controllers
+    * [ ] Menu [has many sections, attrs: name]
+    * [ ] Section [belongs to menu, has many items, attrs: name]
+    * [ ] Item [belongs to section, attrs: name, price]
 
 * [ ] Your client-side application should handle the display of data with minimal data manipulation
 

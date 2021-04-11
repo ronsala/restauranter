@@ -105,3 +105,7 @@ fatal: adding files failed
 ```
 
 Fixed it by removing a redundant subfolder.
+
+## Sun Apr 11 10:40:11 EDT 2021
+
+Created Menu with scaffold. 

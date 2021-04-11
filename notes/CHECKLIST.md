@@ -87,9 +87,9 @@ Restauranter: An open source restaurant management web app.
 
 * [ ] Your Rails API should handle the data persistence with a database. You should be using `fetch()` within your actions to GET and POST data from your API - do not use jQuery methods.
   * [ ] Make models and controllers
-    * [ ] Menu [has many sections, attrs: name]
-    * [ ] Section [belongs to menu, has many items, attrs: name]
-    * [ ] Item [belongs to section, attrs: name, price, desc]
+    * [X] ~~*Menu [has many sections, attrs: name]*~~ [2021-04-11]
+    * [X] ~~*Section [belongs to menu, has many items, attrs: name]*~~ [2021-04-11]
+    * [X] ~~*Item [belongs to section, attrs: name, price, desc]*~~ [2021-04-11]
 
 * [ ] Your client-side application should handle the display of data with minimal data manipulation
 

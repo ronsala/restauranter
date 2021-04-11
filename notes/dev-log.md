@@ -108,4 +108,28 @@ Fixed it by removing a redundant subfolder.
 
 ## Sun Apr 11 10:40:11 EDT 2021
 
-Created Menu with scaffold. 
+Created Menu with scaffold. Setting up Postgres following [https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-ruby-on-rails-application-on-macos](https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-ruby-on-rails-application-on-macos), adapting it for zsh:
+
+```
+RONALDs-MacBook-Pro-2 dev/restauranter-backend ‹menu*› » source ~/.zshrc
+RONALDs-MacBook-Pro-2 dev/restauranter-backend ‹menu*› » code ~/.zshrc
+RONALDs-MacBook-Pro-2 dev/restauranter-backend ‹menu*› » postgres -V
+postgres (PostgreSQL) 13.2
+RONALDs-MacBook-Pro-2 dev/restauranter-backend ‹menu*› » echo 'export PATH="/usr/local/opt/postgresql@13.2/bin:$PATH"' >> ~/.zshrc       
+
+RONALDs-MacBook-Pro-2 dev/restauranter-backend ‹menu*› » source ~/.zshrc                                                          
+RONALDs-MacBook-Pro-2 dev/restauranter-backend ‹menu*› » code ~/.zshrc                                                            
+RONALDs-MacBook-Pro-2 dev/restauranter-backend ‹menu*› » echo $PATH
+/usr/local/opt/postgresql@13.2/bin:/Users/RonSala/bin:/usr/local/bin:/Users/RonSala/bin:/usr/local/bin:/Users/RonSala/.rvm/gems/ruby-2.6.3/bin:/Users/RonSala/.rvm/gems/ruby-2.6.3@global/bin:/Users/RonSala/.rvm/rubies/ruby-2.6.3/bin:/Users/RonSala/.rvm/bin:/Users/RonSala/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/RonSala/.fig/bin:/Users/RonSala/.rvm/bin:/Users/RonSala/.rvm/bin
+RONALDs-MacBook-Pro-2 dev/restauranter-backend ‹menu*› » createuser -d restauranter
+```
+
+Added the latest pg gem. When I ran the server as indicated in the article, got an error, so 
+
+```
+RONALDs-MacBook-Pro-2 dev/restauranter-backend ‹menu*› » rails webpacker:install
+```
+
+Yay! I'm on Rails!
+
+

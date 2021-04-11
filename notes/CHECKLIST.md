@@ -89,7 +89,7 @@ Restauranter: An open source restaurant management web app.
   * [ ] Make models and controllers
     * [ ] Menu [has many sections, attrs: name]
     * [ ] Section [belongs to menu, has many items, attrs: name]
-    * [ ] Item [belongs to section, attrs: name, price]
+    * [ ] Item [belongs to section, attrs: name, price, desc]
 
 * [ ] Your client-side application should handle the display of data with minimal data manipulation
 

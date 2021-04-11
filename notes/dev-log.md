@@ -124,12 +124,11 @@ RONALDs-MacBook-Pro-2 dev/restauranter-backend ‹menu*› » echo $PATH
 RONALDs-MacBook-Pro-2 dev/restauranter-backend ‹menu*› » createuser -d restauranter
 ```
 
-Added the latest pg gem. When I ran the server as indicated in the article, got an error, so 
+Added the latest pg gem. When I ran the server as indicated in the article, got an error, so
 
 ```
 RONALDs-MacBook-Pro-2 dev/restauranter-backend ‹menu*› » rails webpacker:install
 ```
 
 Yay! I'm on Rails!
-
 

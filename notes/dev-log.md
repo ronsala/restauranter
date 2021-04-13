@@ -1,4 +1,6 @@
-# Dev Log
+# Restauranter Dev Log
+
+[https://github.com/ronsala/restauranter-backend](https://github.com/ronsala/restauranter-backend)
 
 ## *Ron Sala*
 
@@ -142,3 +144,24 @@ After experimenting in console, it looks like AR won't accept records that don't
 
 Found this cool trick [https://aneta-bielska.github.io/blog/rails-c-5-ways-to-get-pretty-output.html](https://aneta-bielska.github.io/blog/rails-c-5-ways-to-get-pretty-output.html) and put it to immediate use showing my sections in the rails console beau·ti·ful·ly with pry.
 
+## Mon Apr 12 20:51:49 EDT 2021
+
+Started comparing the previous Rails API I made to the current project. Want to eliminate parts not needed for API only. Wish I'd have set a flag to optimize for that when I set up the app.
+
+Trouble with Postgres after updating it. It said I had a server already using the port. Finally killed it with
+
+```
+RONALDs-MacBook-Pro-2 dev/restauranter-backend ‹menu*› » brew services stop postgresql
+Stopping `postgresql`... (might take a while)
+==> Successfully stopped `postgresql` (label: homebrew.mxcl.postgresql)
+```
+
+then was able to start a new server.
+
+Unfortunately, was not able to seed. Then, tried
+
+```
+RONALDs-MacBook-Pro-2 dev/restauranter-backend ‹menu*› » rails db:create
+FATAL:  role "restauranter" does not exist
+Couldn't create 'restauranter_development' database. Please check your configuration.
+```

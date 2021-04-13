@@ -90,6 +90,7 @@ Restauranter: An open source restaurant management web app.
     * [X] ~~*Menu [has many sections, attrs: name]*~~ [2021-04-11]
     * [X] ~~*Section [belongs to menu, has many items, attrs: name]*~~ [2021-04-11]
     * [X] ~~*Item [belongs to section, attrs: name, price, desc]*~~ [2021-04-11]
+    * [ ] Remove any unnecessary files and folders.
 
 * [ ] Your client-side application should handle the display of data with minimal data manipulation
 

@@ -165,3 +165,17 @@ RONALDs-MacBook-Pro-2 dev/restauranter-backend ‹menu*› » rails db:create
 FATAL:  role "restauranter" does not exist
 Couldn't create 'restauranter_development' database. Please check your configuration.
 ```
+
+## Tue Apr 13 20:30:27 EDT 2021
+
+Fixed this with
+
+```
+RONALDs-MacBook-Pro-2 dev/restauranter-backend ‹menu› » createdb restauranter_development
+```
+
+and
+
+```
+RONALDs-MacBook-Pro-2 dev/restauranter-backend ‹menu› » createuser restauranter
+```

@@ -1,24 +1,48 @@
-# README
+# Restauranter
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+An open source restaurant management web app. A corresponding Rails API can be found at [https://github.com/ronsala/restaranter-backend](https://github.com/ronsala/restaranter-backend).
 
-Things you may want to cover:
+A user is able to order dishes from a menu, arrange delivery, and check out.
 
-* Ruby version
+You can watch a video demo 
+<!-- TODO: -->
+ here. For a transcript of the video, see 
+<!-- TODO -->
+video_demo_script.md.
 
-* System dependencies
+You can read a blog post about the creation of the app 
+<!-- TODO: -->
+ here.
 
-* Configuration
+## Versions
 
-* Database creation
+Ruby 2.6.3
 
-* Database initialization
+Rails 6.0.3.6
 
-* How to run the test suite
+## Installation
 
-* Services (job queues, cache servers, search engines, etc.)
+You can either clone the repository directly from GitHub into a local directory on your computer or you can Fork the app so that you can contribute to the code.
 
-* Deployment instructions
+Once you Fork or Clone this app, cd into that directory and then execute:
 
-* ...
+bundle install
+rails db:migrate
+rails s
+
+## Contributing
+
+
+Bug reports and pull requests are welcome on GitHub at [https://github.com/ronsala/restauranter-backend](https://github.com/ronsala/restauranter-backend). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
+## Code of Conduct
+
+Everyone interacting in the TriviaTrader project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the code of conduct.
+
+## License
+
+This app is available as open source under the terms of the MIT License.
+
+## Acknowledgments
+
+Flatiron School for instruction and community.
+My spouse for support and cheerleading.

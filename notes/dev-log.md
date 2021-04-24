@@ -197,3 +197,18 @@ Unable to stash changes. Stashing so many files (2031) at once requires a newer 
 
 Instead of stashing, opted to get rid of the changes seemingly unrelated to the backend repo that were cluttering up the source control.
 
+## Fri Apr 23 21:03:09 EDT 2021
+
+```
+RONALDs-MacBook-Pro-2 restauranter/restauranter-backend ‹menu*› » bcm "namespace api/V1"
+✔ belly committed your work with this message: namespace api/V1
+✔ belly pushed your work to origin
+RONALDs-MacBook-Pro-2 restauranter/restauranter-backend ‹menu*› » bcm "set up menu serialization"
+✔ belly committed your work with this message: set up menu serialization
+✔ belly pushed your work to origin
+RONALDs-MacBook-Pro-2 restauranter/restauranter-backend ‹menu› » rails db:seed
+RONALDs-MacBook-Pro-2 restauranter/restauranter-backend ‹menu*› » bcm "fix menu seed"
+✔ belly committed your work with this message: fix menu seed
+✔ belly pushed your work to origin
+RONALDs-MacBook-Pro-2 restauranter/restauranter-backend ‹menu› » 
+```

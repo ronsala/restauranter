@@ -10,7 +10,7 @@ Menu.destroy_all
 Section.destroy_all
 Item.destroy_all
 
-menu = Menu.create
+menu = Menu.create(name: "Imposters Bar & Grill")
 
 Section.create(name: 'Starters & Sides', menu_id: menu.id)
 

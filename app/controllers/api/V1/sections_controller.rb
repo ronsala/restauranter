@@ -1,4 +1,4 @@
-class SectionsController < ApplicationController
+class Api::V1::SectionsController < ApplicationController
   before_action :set_section, only: %i[ show edit update destroy ]
 
   # GET /sections or /sections.json

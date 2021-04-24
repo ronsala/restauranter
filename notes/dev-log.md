@@ -182,7 +182,18 @@ RONALDs-MacBook-Pro-2 dev/restauranter-backend ‹menu› » createuser restaura
 
 ## Wed Apr 14 22:09:47 EDT 2021
 
-Added serializer files for Section, Item
+Added serializer files for Section, Item.
 
-## Sat Apr 17 19:05:43 EDT 2021
+## Tue Apr 20 21:13:28 EDT 2021
+
+Updating README's and other documentation.
+
+Next time, should fix README typo(s) and update git, having got this in the frontend:
+
+```
+Unable to stash changes. Stashing so many files (2031) at once requires a newer version of Git (>= 2.30.0) than is currently installed (2.24.3 (Apple Git-128)). Please retry by stashing fewer files or install a more recent version of Git.
+```
+## Thu Apr 22 16:26:50 EDT 2021
+
+Instead of stashing, opted to get rid of the changes seemingly unrelated to the backend repo that were cluttering up the source control.
 

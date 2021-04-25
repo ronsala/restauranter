@@ -1,4 +1,4 @@
-# Restauranter Dev Log
+# Restauranter Backend Dev Log
 
 [https://github.com/ronsala/restauranter-backend](https://github.com/ronsala/restauranter-backend)
 
@@ -212,3 +212,32 @@ RONALDs-MacBook-Pro-2 restauranter/restauranter-backend ‹menu*› » bcm "fix 
 ✔ belly pushed your work to origin
 RONALDs-MacBook-Pro-2 restauranter/restauranter-backend ‹menu› » 
 ```
+
+## Sat Apr 24 19:49:13 EDT 2021
+
+Found I can trigger my code block snippet from VS-Code-Vim's INSERT mode, not NORMAL.
+
+```
+ronsala added 5 commits 4 hours ago
+@ronsala
+comment out example code
+774e98a
+@ronsala
+set up menuSlice
+6dc0f07
+@ronsala
+debug menu
+1537c3d
+@ronsala
+develop menu
+75e9974
+@ronsala
+touch src/features/menu/MenuContainer.js
+c9a9502
+```
+
+## Sun Apr 25 06:51:26 EDT 2021
+
+Changed title of this doc to "Restauranter Backend Dev Log". Will create a corresponding log in the frontend.
+
+

@@ -4,6 +4,7 @@ class Api::V1::MenusController < ApplicationController
   # GET /menus or /menus.json
   def index
     @menus = Menu.all
+    render json: MenuSerializer.new(@menus)
   end
 
   # GET /menus/1 or /menus/1.json
@@ -13,7 +14,7 @@ class Api::V1::MenusController < ApplicationController
   # GET /menus/new
   def new
     @menu = Menu.new
-  end
+   end
 
   # GET /menus/1/edit
   def edit

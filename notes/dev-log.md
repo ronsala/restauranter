@@ -1,4 +1,4 @@
-# Restauranter Dev Log
+# Restauranter Backend Dev Log
 
 [https://github.com/ronsala/restauranter-backend](https://github.com/ronsala/restauranter-backend)
 
@@ -196,4 +196,48 @@ Unable to stash changes. Stashing so many files (2031) at once requires a newer 
 ## Thu Apr 22 16:26:50 EDT 2021
 
 Instead of stashing, opted to get rid of the changes seemingly unrelated to the backend repo that were cluttering up the source control.
+
+## Fri Apr 23 21:03:09 EDT 2021
+
+```
+RONALDs-MacBook-Pro-2 restauranter/restauranter-backend ‹menu*› » bcm "namespace api/V1"
+✔ belly committed your work with this message: namespace api/V1
+✔ belly pushed your work to origin
+RONALDs-MacBook-Pro-2 restauranter/restauranter-backend ‹menu*› » bcm "set up menu serialization"
+✔ belly committed your work with this message: set up menu serialization
+✔ belly pushed your work to origin
+RONALDs-MacBook-Pro-2 restauranter/restauranter-backend ‹menu› » rails db:seed
+RONALDs-MacBook-Pro-2 restauranter/restauranter-backend ‹menu*› » bcm "fix menu seed"
+✔ belly committed your work with this message: fix menu seed
+✔ belly pushed your work to origin
+RONALDs-MacBook-Pro-2 restauranter/restauranter-backend ‹menu› » 
+```
+
+## Sat Apr 24 19:49:13 EDT 2021
+
+Found I can trigger my code block snippet from VS-Code-Vim's INSERT mode, not NORMAL.
+
+```
+ronsala added 5 commits 4 hours ago
+@ronsala
+comment out example code
+774e98a
+@ronsala
+set up menuSlice
+6dc0f07
+@ronsala
+debug menu
+1537c3d
+@ronsala
+develop menu
+75e9974
+@ronsala
+touch src/features/menu/MenuContainer.js
+c9a9502
+```
+
+## Sun Apr 25 06:51:26 EDT 2021
+
+Changed title of this doc to "Restauranter Backend Dev Log". Will create a corresponding log in the frontend.
+
 

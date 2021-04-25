@@ -1,4 +1,4 @@
-class Api::V1::SectionSerializer
+class MenuSerializer
   include FastJsonapi::ObjectSerializer
   attributes :name
 end

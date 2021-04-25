@@ -9,6 +9,8 @@ class Api::V1::MenusController < ApplicationController
 
   # GET /menus/1 or /menus/1.json
   def show
+    @menu = Menu.find(params[:id])
+    render json: MenuSerializer.new(@menu) 
   end
 
   # GET /menus/new

@@ -135,3 +135,129 @@ Item.create(
     } 
   ]
 )
+
+menu2 = Menu.create(name: "Phoebe's Cafe")
+
+Section.create(name: 'Appetizers', menu_id: menu2.id)
+
+Item.create(
+  [
+    { 
+      section_id: Section.last.id, 
+      name: 'Cole Slaw', 
+      price: 3, 
+      desc: 'Like Grandma used to make.' 
+    }, 
+    { 
+      section_id: Section.last.id, 
+      name: 'Cucumber Salad', 
+      price: 4, 
+      desc: "Made with hothouse-grown English cucumbers." 
+    },
+    { 
+      section_id: Section.last.id, 
+      name: 'Crab Cakes with Horseradish Cream', 
+      price: 5, 
+      desc: "Clears the sinus passages so you can appreciate your meal all the more."
+    }
+  ]
+)
+
+Section.create(name: 'Large Plates', menu_id: menu.id)
+
+Item.create(
+  [
+    {
+      section_id: Section.last.id,
+      name: "Meatloaf-lovers' Meatloaf",
+      price: '12',
+      desc: 'A large loaf of Angus beef.'
+    },
+    { 
+      section_id: Section.last.id, 
+      name: "Fisher's Catch", 
+      price: 17, 
+      desc: "So fresh you'll think you're at sea." 
+    }, 
+    { 
+      section_id: Section.last.id, 
+      name: 'Italian Pie', 
+      price: 13, 
+      desc: "The OG pizza." 
+    },
+    { 
+      section_id: Section.last.id, 
+      name: 'Vegetarian Delight', 
+      price: 15, 
+      desc: "A gourmet stew of broccoli, cale, string beans and tofu."
+    }
+  ]
+)
+
+Section.create(name: 'Drinks', menu_id: menu.id)
+
+Item.create(
+  [
+    {
+      section_id: Section.last.id,
+      name: 'Acme Porter, 20 oz',
+      price: '7',
+      desc: "The pride of suburban Milwaulkee."
+    },
+    {
+      section_id: Section.last.id,
+      name: 'Lime Fizz, 12 oz',
+      price: '8',
+      desc: "Delightfully refreshing virgin beverage."
+    },
+    { 
+      section_id: Section.last.id, 
+      name: 'Black Tea', 
+      price: 4, 
+      desc: 'Piping hot and fit for a queen.' 
+    }, 
+    { 
+      section_id: Section.last.id, 
+      name: "Staten Island Seltzer", 
+      price: 5, 
+      desc: "Pure and bubbly hydration." 
+    },
+    { 
+      section_id: Section.last.id, 
+      name: 'Hot Toddy', 
+      price: 5.5, 
+      desc: "Good for what ails you."
+    }
+  ]
+)
+
+Section.create(name: 'Sweet Finishes', menu_id: menu.id)
+
+Item.create(
+  [
+    {
+      section_id: Section.last.id,
+      name: 'Triple Chocolate Cake',
+      price: '12',
+      desc: "People can't stop talking about how good it really is."
+    },
+    { 
+      section_id: Section.last.id, 
+      name: 'French Vanilla Puddle', 
+      price: 6, 
+      desc: "Imported from Paris." 
+    }, 
+    { 
+      section_id: Section.last.id, 
+      name: "Lemon Pound Cake", 
+      price: 9, 
+      desc: "One pound of cake that will pucker your cheeks." 
+    },
+    { 
+      section_id: Section.last.id, 
+      name: 'Turkish Delight', 
+      price: 8.33, 
+      desc: "Our secret recipe is the envy of the world."
+    } 
+  ]
+)

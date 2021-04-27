@@ -10,9 +10,9 @@ Menu.destroy_all
 Section.destroy_all
 Item.destroy_all
 
-menu = Menu.create(name: "Imposters Bar & Grill")
+Menu.create(name: "Imposters Bar & Grill")
 
-Section.create(name: 'Starters & Sides', menu_id: menu.id)
+Section.create(name: 'Starters & Sides', menu_id: Menu.last.id)
 
 Item.create(
   [
@@ -37,7 +37,7 @@ Item.create(
   ]
 )
 
-Section.create(name: 'Entrees', menu_id: menu.id)
+Section.create(name: 'Entrees', menu_id: Menu.last.id)
 
 Item.create(
   [
@@ -68,7 +68,7 @@ Item.create(
   ]
 )
 
-Section.create(name: 'Beverages', menu_id: menu.id)
+Section.create(name: 'Beverages', menu_id: Menu.last.id)
 
 Item.create(
   [
@@ -105,7 +105,7 @@ Item.create(
   ]
 )
 
-Section.create(name: 'Desserts', menu_id: menu.id)
+Section.create(name: 'Desserts', menu_id: Menu.last.id)
 
 Item.create(
   [
@@ -136,9 +136,9 @@ Item.create(
   ]
 )
 
-menu2 = Menu.create(name: "Phoebe's Cafe")
+Menu.create(name: "Phoebe's Cafe")
 
-Section.create(name: 'Appetizers', menu_id: menu2.id)
+Section.create(name: 'Appetizers', menu_id: Menu.last.id)
 
 Item.create(
   [
@@ -163,7 +163,7 @@ Item.create(
   ]
 )
 
-Section.create(name: 'Large Plates', menu_id: menu.id)
+Section.create(name: 'Large Plates', menu_id: Menu.last.id)
 
 Item.create(
   [
@@ -194,7 +194,7 @@ Item.create(
   ]
 )
 
-Section.create(name: 'Drinks', menu_id: menu.id)
+Section.create(name: 'Drinks', menu_id: Menu.last.id)
 
 Item.create(
   [
@@ -231,7 +231,7 @@ Item.create(
   ]
 )
 
-Section.create(name: 'Sweet Finishes', menu_id: menu.id)
+Section.create(name: 'Sweet Finishes', menu_id: Menu.last.id)
 
 Item.create(
   [

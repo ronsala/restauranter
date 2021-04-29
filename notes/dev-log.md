@@ -240,4 +240,9 @@ c9a9502
 
 Changed title of this doc to "Restauranter Backend Dev Log". Will create a corresponding log in the frontend.
 
+## Tue Apr 27 19:37:53 EDT 2021
+
+Got seeds working for second menu. Next time, will do some planning clarifying additional models to be set up, e.g. Check [cart], Customer, Proprietor, etc. Also, could be handy to better visually separate the MVP checklist items from the later ones.
+
+## Wed Apr 28 19:57:23 EDT 2021
 

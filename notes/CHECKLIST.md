@@ -50,7 +50,7 @@ Restauranter: An open source restaurant management web app.
 
 * [ ] Home
 * [ ] Menu
-* [ ] OrderPad
+* [ ] Check [i.e. cart]
 * [ ] Checkout
 * [ ] Delivery
 

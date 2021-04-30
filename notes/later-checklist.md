@@ -8,9 +8,19 @@ Restauranter: An open source restaurant management web app.
 
 ### A user can
 
+#### MVP
+
 * [ ] order dishes from a menu
 * [ ] arrange delivery
 * [ ] check out
+
+#### Later
+
+* [ ] get info and directions
+* [ ] make a reservation
+* [ ] set up an optional end user account
+* [ ] set up an admin account
+
 
 ## Implementation
 
@@ -24,25 +34,50 @@ Restauranter: An open source restaurant management web app.
 
 * [ ] There should be 2 container components
 
-  * [ ] RestaurantContainer
-  * [ ] PatronContainer
+#### MVP
+
+* [ ] UserContainer
+* [ ] MenuContainer
+* [ ] OrderContainer
+
+#### Later
+
+* [ ] ReservationContainer
 
 * [ ] There should be 5 stateless components
 
-  * [ ] Menu
-  * [ ] Section
-  * [ ] Item
-  * [ ] OrderPad [i.e. cart]
-  * [ ] Delivery
-  * [ ] Check[out]
+#### MVP
+
+* [ ] Home
+* [ ] Menu
+* [ ] Check [i.e. cart]
+* [ ] Checkout
+* [ ] Delivery
+
+#### Later
+
+* [ ] Reservations
+* [ ] DirectionsAndInfo
+* [ ] Signup
+* [ ] Login
 
 * [ ] There should be 3 routes
 
-  * [ ] / ['Home']
-  * [ ] /menu
-  * [ ] /order-pad [i.e. 'cart']
-  * [ ] /delivery
-  * [ ] /check
+### MVP
+
+* [ ] / ['Home']
+* [ ] /menu
+* [ ] /order-pad [i.e. 'cart']
+* [ ] /delivery
+* [ ] /checkout
+
+### Later
+
+* [ ] /directions-and-info
+* [ ] /signup
+* [ ] /login
+* [ ] /account
+* [ ] /reservations
 
 * [ ] The Application must make use of `react-router` and proper RESTful routing (should you choose to use react-router v3 please refer to the appropriate [docs](https://github.com/ReactTraining/react-router/tree/v3/docs); docs for v4 can be found [here](https://reacttraining.com/react-router/web/guides/quick-start))
 
@@ -52,13 +87,9 @@ Restauranter: An open source restaurant management web app.
 
 * [ ] Your Rails API should handle the data persistence with a database. You should be using `fetch()` within your actions to GET and POST data from your API - do not use jQuery methods.
   * [ ] Make models and controllers
-    * [X] ~~*Menu*~~ [2021-04-11]
-    * [X] ~~*Section*~~ [2021-04-11]
-    * [X] ~~*Item*~~ [2021-04-11]
-    * [ ] Restaurant
-    * [ ] Patron
-    * [ ] Order
-    * [ ] OrderItem
+    * [X] ~~*Menu [has many sections, attrs: name]*~~ [2021-04-11]
+    * [X] ~~*Section [belongs to menu, has many items, attrs: name]*~~ [2021-04-11]
+    * [X] ~~*Item [belongs to section, attrs: name, price, desc]*~~ [2021-04-11]
     * [ ] Remove any unnecessary files and folders.
 
 * [ ] Your client-side application should handle the display of data with minimal data manipulation

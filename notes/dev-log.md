@@ -244,5 +244,9 @@ Changed title of this doc to "Restauranter Backend Dev Log". Will create a corre
 
 Got seeds working for second menu. Next time, will do some planning clarifying additional models to be set up, e.g. Check [cart], Customer, Proprietor, etc. Also, could be handy to better visually separate the MVP checklist items from the later ones.
 
-## Wed Apr 28 19:57:23 EDT 2021
+## Fri Apr 30 14:27:18 EDT 2021
+
+Further reducing parts of the MVP project that go beyond the assessment requirements. Can add them later. 
+
+Looking at [https://egghead.io/lessons/react-create-a-stateless-functional-component-for-an-input-form](https://egghead.io/lessons/react-create-a-stateless-functional-component-for-an-input-form).
 

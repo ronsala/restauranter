@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :order_items
+  resources :orders
+  resources :patrons
+  resources :restaurants
   namespace :api do
     namespace :v1 do
       resources :items

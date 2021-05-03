@@ -64,7 +64,7 @@ Restauranter: An open source restaurant management web app.
 * [ ] Your client-side application should handle the display of data with minimal data manipulation
 
 * [ ] Your application should have some minimal styling: feel free to stick to a framework (like react-bootstrap), but if you want to write (additional) CSS yourself, go for it!
-  * [ ] Use [Tailwind](https://tailwindcss.com/)
+  * [ ] Use [Tailwind](https://tailwindcss.com/) and/or [React Suite](https://rsuitejs.com/)
 
 * [ ] [Once your app is complete, fill out this checklist.](https://goo.gl/forms/ULtKsxuzWomvXuTk2)
   * [ ] Fill in [spec.md](./spec.md)

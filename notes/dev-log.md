@@ -250,3 +250,8 @@ Further reducing parts of the MVP project that go beyond the assessment requirem
 
 Looking at [https://egghead.io/lessons/react-create-a-stateless-functional-component-for-an-input-form](https://egghead.io/lessons/react-create-a-stateless-functional-component-for-an-input-form).
 
+## Mon May  3 19:07:03 EDT 2021
+
+Had checked out [https://github.com/andela/dinner-dash-rails](https://github.com/andela/dinner-dash-rails) for ideas.
+
+Switching to building Restaurant.

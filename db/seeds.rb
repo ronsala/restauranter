@@ -6,11 +6,14 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Restaurant.destroy_all
 Menu.destroy_all
 Section.destroy_all
 Item.destroy_all
 
-Menu.create(name: "Imposters Bar & Grill")
+Restaurant.create(name: "Imposters Bar & Grill", street: '23 Maple Street', city: 'Smithtown', state: 'NY', desc: "Real food for real folks.")
+
+Menu.create(name: "Imposters Bar & Grill Main Menu", restaurant_id: Restaurant.last.id)
 
 Section.create(name: 'Starters & Sides', menu_id: Menu.last.id)
 
@@ -32,7 +35,7 @@ Item.create(
       section_id: Section.last.id, 
       name: 'Nachos and Salsa', 
       price: 4.5, 
-      desc: "Mild, Medium, Hot, or Ludicrous, it's up to you."
+      desc: "Restaurant-style, medium hotness."
     }
   ]
 )
@@ -136,7 +139,9 @@ Item.create(
   ]
 )
 
-Menu.create(name: "Phoebe's Cafe")
+Restaurant.create(name: "Phoebe's Cafe", street: '42 Paradise Avenue', city: 'Santa Barbara', state: 'CA', desc: "Casual cuisine combining rustic charm and urban sophistication.")
+
+Menu.create(name: "Phoebe's Cafe Main Menu", restaurant_id: Restaurant.last.id)
 
 Section.create(name: 'Appetizers', menu_id: Menu.last.id)
 

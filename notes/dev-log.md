@@ -255,3 +255,6 @@ Looking at [https://egghead.io/lessons/react-create-a-stateless-functional-compo
 Had checked out [https://github.com/andela/dinner-dash-rails](https://github.com/andela/dinner-dash-rails) for ideas.
 
 Switching to building Restaurant.
+
+## Tue May  4 18:48:28 EDT 2021
+

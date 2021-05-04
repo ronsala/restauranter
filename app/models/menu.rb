@@ -1,3 +1,4 @@
 class Menu < ApplicationRecord
-  has_many :sections
+  belongs_to :restaurant
+  has_many :sections, dependent: :destroy
 end

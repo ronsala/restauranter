@@ -6,7 +6,7 @@ Restauranter: An open source restaurant management web app.
 
 ## User Stories
 
-There are two kinds of users, Proprietors and Patrons.
+There are two kinds of users: Proprietors and Patrons.
 
 ### A Proprietor can
 
@@ -33,8 +33,9 @@ There are two kinds of users, Proprietors and Patrons.
 
 * [ ] There should be 2 container components
 
-  * [ ] RestaurantContainer
-  * [ ] PatronContainer
+  * [ ] ProprietorsContainer
+  * [ ] RestaurantsContainer
+  * [ ] PatronsContainer
 
 * [ ] There should be 5 stateless components
 
@@ -47,11 +48,18 @@ There are two kinds of users, Proprietors and Patrons.
 
 * [ ] There should be 3 routes
 
-  * [ ] / ['Home']
-  * [ ] /menu
+  * [ ] / ['Home', choose Proprietor or Patron]
+  * [ ] /pr [choose Signup or Login]
+  * [ ] /pr/signup
+  * [ ] /pr/login
+  * [ ] /pr/my-restaurants
+  * [ ] /pr/restaurants/[:id]/[CRUD]
+  * [ ] /pr/menus/[:id]/[CRUD]
+  * [ ] /pn/restaurants/
+  * [ ] /pn/restaurants/[:id] [shows current menu]
   * [ ] /order-pad [i.e. 'cart']
   * [ ] /delivery
-  * [ ] /check
+  * [ ] /check [receipt]
 
 * [ ] The Application must make use of `react-router` and proper RESTful routing (should you choose to use react-router v3 please refer to the appropriate [docs](https://github.com/ReactTraining/react-router/tree/v3/docs); docs for v4 can be found [here](https://reacttraining.com/react-router/web/guides/quick-start))
 
@@ -64,10 +72,10 @@ There are two kinds of users, Proprietors and Patrons.
     * [X] ~~*Menu*~~ [2021-04-11]
     * [X] ~~*Section*~~ [2021-04-11]
     * [X] ~~*Item*~~ [2021-04-11]
-    * [ ] Restaurant
-    * [ ] Patron
-    * [ ] Order
-    * [ ] OrderItem
+    * [X] ~~*Restaurant*~~ [2021-05-09]
+    * [X] ~~*Patron*~~ [2021-05-09]
+    * [X] ~~*Order*~~ [2021-05-09]
+    * [X] ~~*OrderItem*~~ [2021-05-09]
     * [ ] Remove any unnecessary files and folders.
 
 * [ ] Your client-side application should handle the display of data with minimal data manipulation

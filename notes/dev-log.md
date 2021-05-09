@@ -256,5 +256,9 @@ Had checked out [https://github.com/andela/dinner-dash-rails](https://github.com
 
 Switching to building Restaurant.
 
-## Tue May  4 18:48:28 EDT 2021
+## Sun May  9 06:37:52 EDT 2021
+
+Have decided to switch up what the MVP will do, so as to have an app that is fully functional from the UI, rather than relying only on data from the seed file.
+
+Now updating notes files.
 

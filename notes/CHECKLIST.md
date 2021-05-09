@@ -6,8 +6,17 @@ Restauranter: An open source restaurant management web app.
 
 ## User Stories
 
-### A user can
+There are two kinds of users, Proprietors and Patrons.
 
+### A Proprietor can
+
+* [ ] sign up and log in
+* [ ] set up and maintain restaurants and their menus
+* [ ] view order and delivery data
+
+### A Patron can
+
+* [ ] select a restaurant
 * [ ] order dishes from a menu
 * [ ] arrange delivery
 * [ ] check out

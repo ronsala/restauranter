@@ -1,4 +1,4 @@
 class MenuSerializer
   include FastJsonapi::ObjectSerializer
-  attributes :name
+  attributes :name, :restaurant_id
 end

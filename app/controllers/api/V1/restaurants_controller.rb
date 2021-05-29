@@ -11,6 +11,7 @@ class Api::V1::RestaurantsController < ApplicationController
   # GET /restaurants/1
   # GET /restaurants/1.json
   def show
+    render json: RestaurantSerializer.new(@restaurant)
   end
 
   # POST /restaurants

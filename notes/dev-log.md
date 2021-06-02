@@ -246,7 +246,7 @@ Got seeds working for second menu. Next time, will do some planning clarifying a
 
 ## Fri Apr 30 14:27:18 EDT 2021
 
-Further reducing parts of the MVP project that go beyond the assessment requirements. Can add them later. 
+Further reducing parts of the MVP project that go beyond the assessment requirements. Can add them later.
 
 Looking at [https://egghead.io/lessons/react-create-a-stateless-functional-component-for-an-input-form](https://egghead.io/lessons/react-create-a-stateless-functional-component-for-an-input-form).
 

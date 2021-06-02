@@ -3,7 +3,9 @@ class Api::V1::SectionsController < ApplicationController
 
   # GET /sections or /sections.json
   def index
-    @sections = Section.all
+    @menu = Menu.find(params[:menu_id])
+    @sections = @menu.sections
+    render json: SectionSerializer.new(@sections)
   end
 
   # GET /sections/1 or /sections/1.json

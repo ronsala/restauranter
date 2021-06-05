@@ -262,3 +262,7 @@ Have decided to switch up what the MVP will do, so as to have an app that is ful
 
 Now updating notes files.
 
+##Fri Jun  4 21:05:49 EDT 2021
+
+Dakota recommended a blog post on switching a Rails app to api: https://hashrocket.com/blog/posts/how-to-make-rails-5-api-only.
+

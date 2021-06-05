@@ -20,5 +20,6 @@ Attrs: name, price, desc, section_id
 Patron has many orders
 Attrs: first_name, last_name, email, password_digest, street, city, state
 
-Order belongs to Restaurant and Patron, has many items
+Order belongs to Restaurant and Patron, has many Items
 Attrs: total, restaurant_id, patron_id, street, city, state
+

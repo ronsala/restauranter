@@ -262,7 +262,28 @@ Have decided to switch up what the MVP will do, so as to have an app that is ful
 
 Now updating notes files.
 
-##Fri Jun  4 21:05:49 EDT 2021
+## Fri Jun  4 21:05:49 EDT 2021
 
 Dakota recommended a blog post on switching a Rails app to api: https://hashrocket.com/blog/posts/how-to-make-rails-5-api-only.
+
+## Sat Jun  5 13:15:33 EDT 2021
+
+I notice the article addresses Rails 5, and I'm on 6. Followed the steps and got
+
+```
+         1: from /Users/RonSala/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.6/lib/rails/initializable.rb:32:in `instance_exec'
+/Users/RonSala/.rvm/gems/ruby-2.6.3/gems/sprockets-rails-3.2.2/lib/sprockets/railtie.rb:106:in `block in <class:Railtie>': Expected to find a manifest file in `app/assets/config/manifest.js` (Sprockets::Railtie::ManifestNeededError)
+But did not, please create this file and use it to link any assets that need
+to be rendered by your app:
+
+Example:
+  //= link_tree ../images
+  //= link_directory ../javascripts .js
+  //= link_directory ../stylesheets .css
+and restart your server
+
+For more information see: https://github.com/rails/sprockets/blob/070fc01947c111d35bb4c836e9bb71962a8e0595/UPGRADING.md#manifestjs
+```
+
+Think that's what I got last time I tried to remove it. I note that that file was empty. I just needed one to avoid the error. Added it back and everything appears to be working.
 

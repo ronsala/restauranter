@@ -41,7 +41,7 @@ User has many restaurants
 Attrs: first_name, last_name, email, password_digest, street, city, state
 
 Restaurant belongs to User, has many menus
-Attrs: name, street, city, state, desc, proprietor_id
+Attrs: name, street, city, state, desc, user_id
 
 Menu belongs to Restaurant, has many sections
 Attrs: name, restaurant_id
@@ -53,7 +53,7 @@ Item belongs to Section
 Attrs: name, price, desc, section_id
 
 Order belongs to Restaurant, has many OrderItems
-Attrs: total, restaurant_id, patron_id, street, city, state
+Attrs: total, restaurant_id
 
 OrderItem belongs to Order and Item
 Attrs: name, price, count

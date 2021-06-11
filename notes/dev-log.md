@@ -287,3 +287,44 @@ For more information see: https://github.com/rails/sprockets/blob/070fc01947c111
 
 Think that's what I got last time I tried to remove it. I note that that file was empty. I just needed one to avoid the error. Added it back and everything appears to be working.
 
+## Thu Jun 10 17:16:15 EDT 2021
+
+Mulling how to handle Proprietors and Patron. Currently have them as separate models.
+
+Possibilities:
+
+Backend:
+
+* Proprietor model. Restaurant model with :proprietor_id. Patron model. Order model with :patron_id and :restaurant_id.
+
+S: Current state.
+B: 
+A: Con: User has to create 2 accounts.
+R: 
+
+* User model with :proprietor and :patron bool attributes.
+
+S: 
+B: 
+A: 
+R: 
+
+Pro: User only has to create 1 account.
+
+* User model that may has one Proprietor and/or one Patron (account).
+
+S: 
+B: 
+A: 
+R: 
+
+* User model that has many restaurants.
+
+S: 
+B: 
+A: Pro: User only has to create 1 account. Simple.
+R: Recommend. 
+
+Frontend:
+
+* restaurant entities with :user_id attribute.

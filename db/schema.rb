@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_04_230324) do
+ActiveRecord::Schema.define(version: 2021_06_11_005631) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,7 +32,6 @@ ActiveRecord::Schema.define(version: 2021_05_04_230324) do
   end
 
   create_table "order_items", force: :cascade do |t|
-    t.integer "quantity"
     t.integer "item_id"
     t.integer "order_id"
     t.datetime "created_at", precision: 6, null: false
@@ -42,17 +41,6 @@ ActiveRecord::Schema.define(version: 2021_05_04_230324) do
   create_table "orders", force: :cascade do |t|
     t.decimal "total"
     t.integer "restaurant_id"
-    t.integer "patron_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "patrons", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
-    t.string "street"
-    t.string "city"
-    t.string "state"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -65,6 +53,7 @@ ActiveRecord::Schema.define(version: 2021_05_04_230324) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "state"
+    t.integer "user_id"
   end
 
   create_table "sections", force: :cascade do |t|
@@ -72,6 +61,16 @@ ActiveRecord::Schema.define(version: 2021_05_04_230324) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "menu_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "street"
+    t.string "city"
+    t.string "state"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
 end

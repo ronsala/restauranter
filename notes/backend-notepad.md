@@ -52,7 +52,7 @@ Attrs: name, menu_id
 Item belongs to Section
 Attrs: name, price, desc, section_id
 
-Order belongs to Restaurant, has many Items
+Order belongs to Restaurant, has many OrderItems
 Attrs: total, restaurant_id, patron_id, street, city, state
 
 OrderItem belongs to Order and Item

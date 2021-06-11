@@ -54,3 +54,6 @@ Attrs: name, price, desc, section_id
 
 Order belongs to Restaurant, has many Items
 Attrs: total, restaurant_id, patron_id, street, city, state
+
+OrderItem belongs to Order and Item
+Attrs: name, price, count

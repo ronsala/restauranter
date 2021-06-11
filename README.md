@@ -1,18 +1,17 @@
 # Restauranter
 
-An open source restaurant management web app. A corresponding React frontend can be found at [https://github.com/ronsala/restaranter-frontend](https://github.com/ronsala/restaranter-frontend).
+Patrons can ...
 
-A user is able to
-
-* as patron
-  * order dishes from a menu
-  * arrange to pick up or dine in
-  * check out
-  * see their own orders
+* order dishes from a menu
+* arrange to pick up or dine in
+* check out
+* sign up for an account for return visits (optional)
   
-* as proprietor
-  * set up a restaurant and menu
-  * see their restaurant's orders
+Proprietors can ...
+
+* Sign up for an account
+* Set up a restaurant and menu
+* See their restaurant's orders and mark them fulfilled
 
 You can watch a video demo 
 <!-- TODO: -->

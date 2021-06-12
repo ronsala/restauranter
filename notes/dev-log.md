@@ -328,3 +328,7 @@ R: Recommend.
 Frontend:
 
 * restaurant entities with :user_id attribute.
+
+## Fri Jun 11 15:38:55 EDT 2021
+
+CB recommends not doing auth for assessment, says we can Slack him.

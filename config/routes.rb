@@ -12,8 +12,8 @@ Rails.application.routes.draw do
         resources :orders 
       end
 
-      resources :patrons do
-       resources :orders 
+      resources :users do
+       resources :restaurants 
       end
       
       resources :orders do

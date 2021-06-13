@@ -1,4 +1,4 @@
-class UsersController < ApplicationController
+class Api::V1::UsersController < ApplicationController
   before_action :set_user, only: %i[ show update destroy ]
 
   # GET /users
@@ -16,6 +16,7 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
     @user = User.new(user_params)
+    byebug
 
     if @user.save
       render :show, status: :created, location: @user
@@ -48,6 +49,6 @@ class UsersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def user_params
-      params.require(:user).permit(:first_name, :last_name, :street, :city, :state, :password)
+      params.require(:user).permit(:first_name, :last_name, :email, :street, :city, :state, :password)
     end
 end

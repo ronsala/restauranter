@@ -42,6 +42,15 @@ class Api::V1::UsersController < ApplicationController
     render json: UserSerializer.new(@user)
   end
 
+  def login
+    @user = User.find_by(email: user_login_params[:email])
+    if @user && @user.authenticate(user_login_params[:password])
+      render json: UserSerializer.new(@user), status: :accepted
+    else
+      render json: { message: 'Invalid email or password' }, stauts: :unauthorized
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user
@@ -49,6 +58,11 @@ class Api::V1::UsersController < ApplicationController
     end
 
     # Only allow a list of trusted parameters through.
+
+    def user_login_params
+      params.require(:user).permit(:email, :password)
+    end
+
     def user_params
       params.require(:user).permit(:first_name, :last_name, :email, :street, :city, :state, :password)
     end

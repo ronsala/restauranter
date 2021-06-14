@@ -29,7 +29,7 @@ class Api::V1::UsersController < ApplicationController
   # PATCH/PUT /users/1.json
   def update
     if @user.update(user_params)
-      render :show, status: :ok, location: @user
+      render json: UserSerializer.new(@user)
     else
       render json: @user.errors, status: :unprocessable_entity
     end
@@ -39,6 +39,7 @@ class Api::V1::UsersController < ApplicationController
   # DELETE /users/1.json
   def destroy
     @user.destroy
+    render json: UserSerializer.new(@user)
   end
 
   private

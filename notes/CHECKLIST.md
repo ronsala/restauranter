@@ -29,7 +29,7 @@ There are two user roles: Proprietor and Patron.
   * [X] ~~*Follow the instructions on this repo to setup the generator: [create-react-app](https://github.com/facebookincubator/create-react-app)*~~ [2021-06-15]
   * [X] ~~*Use [React Toolkit](https://redux-toolkit.js.org/)*~~ [2021-06-15]
 
-* [ ] Your app should have one HTML page to render your react-redux application
+* [X] ~~*Your app should have one HTML page to render your react-redux application*~~ [2021-06-15]
 
 * [X] ~~*There should be 2 container components*~~ [2021-06-15]
 

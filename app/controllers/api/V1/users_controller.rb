@@ -1,4 +1,4 @@
-class UsersController < ApplicationController
+class Api::V1::UsersController < ApplicationController
   before_action :set_user, only: %i[ show update destroy ]
 
   # GET /users
@@ -10,6 +10,7 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+    render json: UserSerializer.new(@user)
   end
 
   # POST /users
@@ -18,7 +19,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      render :show, status: :created, location: @user
+      render json: UserSerializer.new(@user)
     else
       render json: @user.errors, status: :unprocessable_entity
     end
@@ -28,7 +29,7 @@ class UsersController < ApplicationController
   # PATCH/PUT /users/1.json
   def update
     if @user.update(user_params)
-      render :show, status: :ok, location: @user
+      render json: UserSerializer.new(@user)
     else
       render json: @user.errors, status: :unprocessable_entity
     end
@@ -38,6 +39,16 @@ class UsersController < ApplicationController
   # DELETE /users/1.json
   def destroy
     @user.destroy
+    render json: UserSerializer.new(@user)
+  end
+
+  def login
+    @user = User.find_by(email: user_login_params[:email])
+    if @user && @user.authenticate(user_login_params[:password])
+      render json: UserSerializer.new(@user), status: :accepted
+    else
+      render json: { message: 'Invalid email or password' }, stauts: :unauthorized
+    end
   end
 
   private
@@ -47,7 +58,12 @@ class UsersController < ApplicationController
     end
 
     # Only allow a list of trusted parameters through.
+
+    def user_login_params
+      params.require(:user).permit(:email, :password)
+    end
+
     def user_params
-      params.require(:user).permit(:first_name, :last_name, :street, :city, :state, :password)
+      params.require(:user).permit(:first_name, :last_name, :email, :street, :city, :state, :password)
     end
 end

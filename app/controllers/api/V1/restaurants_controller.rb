@@ -20,7 +20,7 @@ class Api::V1::RestaurantsController < ApplicationController
     @restaurant = Restaurant.new(restaurant_params)
 
     if @restaurant.save
-      render :show, status: :created, location: @restaurant
+      render json: RestaurantSerializer.new(@restaurant)
     else
       render json: @restaurant.errors, status: :unprocessable_entity
     end
@@ -50,6 +50,6 @@ class Api::V1::RestaurantsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def restaurant_params
-      params.require(:restaurant).permit(:name, :street, :city, :state, :desc)
+      params.require(:restaurant).permit(:name, :street, :city, :state, :desc, :user_id)
     end
 end

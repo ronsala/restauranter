@@ -6,14 +6,17 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+User.destroy_all
 Restaurant.destroy_all
 Menu.destroy_all
 Section.destroy_all
 Item.destroy_all
 
-Restaurant.create(name: "Imposters Bar & Grill", street: '23 Maple Street', city: 'Smithtown', state: 'NY', desc: "Real food for real folks.")
+User.create(first_name: 'John', last_name: 'Johansen', street: '24 Maple Street', city: 'Smithtown', state: 'NY', email: 'jj@example.com', password: '123')
 
-Menu.create(name: "Imposters Bar & Grill Main Menu", restaurant_id: Restaurant.last.id)
+Restaurant.create(name: 'Imposters Bar & Grill', street: '23 Maple Street', city: 'Smithtown', state: 'NY', desc: 'Real food for real folks.', user_id: User.last.id, live: true)
+
+Menu.create(name: 'Imposters Bar & Grill Main Menu', restaurant_id: Restaurant.last.id)
 
 Section.create(name: 'Starters & Sides', menu_id: Menu.last.id)
 
@@ -139,7 +142,9 @@ Item.create(
   ]
 )
 
-Restaurant.create(name: "Phoebe's Cafe", street: '42 Paradise Avenue', city: 'Santa Barbara', state: 'CA', desc: "Casual cuisine combining rustic charm and urban sophistication.")
+User.create(first_name: 'Phoebe', last_name: 'Gindlesberger', street: '48 Elm Avenue', city: 'Santa Barbara', state: 'CA', email: 'pg@example.com', password: '123')
+
+Restaurant.create(name: "Phoebe's Cafe", street: '42 Paradise Avenue', city: 'Santa Barbara', state: 'CA', desc: 'Casual cuisine combining rustic charm and urban sophistication.', user_id: User.last.id, live: true)
 
 Menu.create(name: "Phoebe's Cafe Main Menu", restaurant_id: Restaurant.last.id)
 

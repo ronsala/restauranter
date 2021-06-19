@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_18_223253) do
+ActiveRecord::Schema.define(version: 2021_06_19_114447) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -54,7 +54,7 @@ ActiveRecord::Schema.define(version: 2021_06_18_223253) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "state"
     t.integer "user_id"
-    t.boolean "live"
+    t.boolean "live", default: false
   end
 
   create_table "sections", force: :cascade do |t|

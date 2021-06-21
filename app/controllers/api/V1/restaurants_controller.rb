@@ -30,7 +30,7 @@ class Api::V1::RestaurantsController < ApplicationController
   # PATCH/PUT /restaurants/1.json
   def update
     if @restaurant.update(restaurant_params)
-      render :show, status: :ok, location: @restaurant
+      render json: RestaurantSerializer.new(@restaurant)
     else
       render json: @restaurant.errors, status: :unprocessable_entity
     end
@@ -40,6 +40,7 @@ class Api::V1::RestaurantsController < ApplicationController
   # DELETE /restaurants/1.json
   def destroy
     @restaurant.destroy
+    render json: RestaurantSerializer.new(@restaurant)
   end
 
   private
@@ -50,6 +51,6 @@ class Api::V1::RestaurantsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def restaurant_params
-      params.require(:restaurant).permit(:name, :street, :city, :state, :desc, :user_id)
+      params.require(:restaurant).permit(:name, :street, :city, :state, :desc, :user_id, :live)
     end
 end

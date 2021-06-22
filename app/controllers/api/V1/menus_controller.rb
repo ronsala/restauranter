@@ -10,7 +10,6 @@ class Api::V1::MenusController < ApplicationController
 
   # GET /menus/1 or /menus/1.json
   def show
-    @menu = Menu.find(params[:id])
     render json: MenuSerializer.new(@menu) 
   end
 
@@ -19,45 +18,29 @@ class Api::V1::MenusController < ApplicationController
     @menu = Menu.new
   end
 
-  # GET /menus/1/edit
-  def edit
-  end
-
   # POST /menus or /menus.json
   def create
     @menu = Menu.new(menu_params)
-
-    respond_to do |format|
-      if @menu.save
-        format.html { redirect_to @menu, notice: "Menu was successfully created." }
-        format.json { render :show, status: :created, location: @menu }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @menu.errors, status: :unprocessable_entity }
-      end
+    if @menu.save
+      render json: MenuSerializer.new(@menu)
+    else
+      render json: @menu.errors, status: :unprocessable_entity
     end
   end
 
   # PATCH/PUT /menus/1 or /menus/1.json
   def update
-    respond_to do |format|
-      if @menu.update(menu_params)
-        format.html { redirect_to @menu, notice: "Menu was successfully updated." }
-        format.json { render :show, status: :ok, location: @menu }
-      else
-        format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @menu.errors, status: :unprocessable_entity }
-      end
+    if @menu.update(menu_params)
+      render json: MenuSerializer.new(@menu)
+    else
+      render json: @menu.errors, status: :unprocessable_entity
     end
   end
 
   # DELETE /menus/1 or /menus/1.json
   def destroy
     @menu.destroy
-    respond_to do |format|
-      format.html { redirect_to menus_url, notice: "Menu was successfully destroyed." }
-      format.json { head :no_content }
-    end
+    render json: MenuSerializer.new(@menu)    
   end
 
   private
@@ -68,6 +51,6 @@ class Api::V1::MenusController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def menu_params
-      params.require(:menu).permit(:name)
+      params.require(:menu).permit(:name, :restaurant_id)
     end
 end

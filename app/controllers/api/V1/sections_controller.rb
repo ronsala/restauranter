@@ -34,7 +34,7 @@ class Api::V1::SectionsController < ApplicationController
   # PATCH/PUT /sections/1 or /sections/1.json
   def update
     if @section.update(section_params)
-      render json: MenuSerializer.new(@menu)
+      render json: SectionSerializer.new(@section)
     else
       render json: @menu.errors, status: :unprocessable_entity
     end

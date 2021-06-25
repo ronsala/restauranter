@@ -26,6 +26,7 @@ Rails.application.routes.draw do
   # end
   namespace :api do
     namespace :v1 do
+      resources :items, only: %i[ create update destroy ]
       resources :menus
       resources :sections, only: %i[ create update destroy ]
 

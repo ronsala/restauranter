@@ -19,7 +19,6 @@ There are two user roles: Proprietor and Patron.
 * [X] ~~*select a restaurant*~~ [2021-06-15]
 * [X] ~~*order dishes from a menu*~~ [2021-06-15]
 * [ ] check out
-* [ ] sign up for an account for return visits (optional)
 
 ## Implementation
 
@@ -41,7 +40,7 @@ There are two user roles: Proprietor and Patron.
   * [X] ~~*Menu*~~ [2021-06-15]
   * [X] ~~*SectionAccordion*~~ [2021-06-15]
   * [X] ~~*ItemsTable*~~ [2021-06-15]
-  * [X] ~~*OrderItemsTable [i.e. cart]*~~ [2021-06-15]
+  * [X] ~~*Buttons*~~ [2021-06-26]
   * [X] ~~*Restaurant*~~ [2021-06-15]
 
 * [X] ~~*There should be 3 routes*~~ [2021-06-15]

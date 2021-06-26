@@ -44,10 +44,10 @@ Rails.application.routes.draw do
       end
       
       resources :orders do
-        resources :order_items, only %i[ index show ]
+        resources :order_items, only: %i[ index show ]
       end
 
-      resources :order_items, only %i[ create ]
+      resources :order_items, only: %i[ create ]
 
       post 'login', to: 'users#login'
     end

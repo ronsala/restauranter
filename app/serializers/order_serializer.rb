@@ -1,4 +1,4 @@
 class OrderSerializer
   include FastJsonapi::ObjectSerializer
-  attributes :total, restaurant_id
+  attributes :order_items, :order_type, :restaurant_id
 end

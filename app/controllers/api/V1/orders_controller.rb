@@ -15,7 +15,8 @@ class Api::V1::OrdersController < ApplicationController
   # POST /orders
   # POST /orders.json
   def create
-    @order = Order.new(order_params)
+    order_from_order_params = Order.new(order_params)
+    @order = order_from_order_params
     if @order.save
       render json: OrderSerializer.new(@order)
     else
@@ -47,6 +48,8 @@ class Api::V1::OrdersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def order_params
-      params.require(:order).permit(:total, :restaurant_id, :order_type)
+      # params.require(:order).permit(:order_type, :restaurant_id, :order_items => [:id, :type, :count, :attributes => [:name, :price, :section_id]])
+      # params.require(:order).permit(:order_type, :restaurant_id, :order_items, array: [:id, :type, :count, :attributes => [:name, :price, :section_id]])
+      params.require(:order).permit(:order_type, :restaurant_id, :order_items => [:id, :type, :count, :attributes => [:name, :price, :section_id]])
     end
 end

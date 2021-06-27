@@ -15,8 +15,7 @@ class Api::V1::OrdersController < ApplicationController
   # POST /orders
   # POST /orders.json
   def create
-    order_from_order_params = Order.new(order_params)
-    @order = order_from_order_params
+    @order = Order.new(order_params)
     if @order.save
       render json: OrderSerializer.new(@order)
     else

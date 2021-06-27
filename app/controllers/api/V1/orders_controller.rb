@@ -5,6 +5,7 @@ class Api::V1::OrdersController < ApplicationController
   # GET /orders.json
   def index
     @orders = Order.all
+    render json: OrderSerializer.new(@orders)
   end
 
   # GET /orders/1
@@ -49,6 +50,6 @@ class Api::V1::OrdersController < ApplicationController
     def order_params
       # params.require(:order).permit(:order_type, :restaurant_id, :order_items => [:id, :type, :count, :attributes => [:name, :price, :section_id]])
       # params.require(:order).permit(:order_type, :restaurant_id, :order_items, array: [:id, :type, :count, :attributes => [:name, :price, :section_id]])
-      params.require(:order).permit(:order_type, :restaurant_id, :order_items => [:id, :type, :count, :attributes => [:name, :price, :section_id]])
+      params.require(:order).permit(:order_type, :restaurant_id, :total, :order_items => [:id, :type, :count, :attributes => [:name, :price, :section_id]])
     end
 end

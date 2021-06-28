@@ -28,7 +28,7 @@ class Api::V1::OrdersController < ApplicationController
   # PATCH/PUT /orders/1.json
   def update
     if @order.update(order_params)
-      render :show, status: :ok, location: @order
+      render json: OrderSerializer.new(@order)
     else
       render json: @order.errors, status: :unprocessable_entity
     end
@@ -48,8 +48,6 @@ class Api::V1::OrdersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def order_params
-      # params.require(:order).permit(:order_type, :restaurant_id, :order_items => [:id, :type, :count, :attributes => [:name, :price, :section_id]])
-      # params.require(:order).permit(:order_type, :restaurant_id, :order_items, array: [:id, :type, :count, :attributes => [:name, :price, :section_id]])
-      params.require(:order).permit(:order_type, :restaurant_id, :total, :order_items => [:id, :type, :count, :attributes => [:name, :price, :section_id]])
+      params.require(:order).permit(:order_type, :restaurant_id, :total, :fulfilled, :order_items => [:id, :type, :count, :attributes => [:name, :price, :section_id]])
     end
 end

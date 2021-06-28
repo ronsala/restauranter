@@ -1,29 +1,5 @@
 # TODO: Simplify routes.
 Rails.application.routes.draw do
-  # namespace :api do
-  #   namespace :v1 do
-  #     resources :menus
-
-  #     resources :restaurants do
-  #       resources :menus do
-  #         resources :sections do
-  #           resources :items
-  #         end
-  #       end
-  #       resources :orders 
-  #     end
-
-  #     resources :users do
-  #       resources :restaurants 
-  #     end
-      
-  #     resources :orders do
-  #       resources :items
-  #     end
-
-  #     post 'login', to: 'users#login'
-  #   end
-  # end
   namespace :api do
     namespace :v1 do
       resources :items, only: %i[ create update destroy ]
@@ -43,11 +19,7 @@ Rails.application.routes.draw do
         resources :restaurants 
       end
       
-      resources :orders do
-        resources :order_items, only: %i[ index show ]
-      end
-
-      resources :order_items, only: %i[ create ]
+      resources :orders
 
       post 'login', to: 'users#login'
     end

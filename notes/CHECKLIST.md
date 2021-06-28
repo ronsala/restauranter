@@ -11,14 +11,14 @@ There are two user roles: Proprietor and Patron.
 ### A user as Proprietor can
 
 * [X] ~~*sign up and log in*~~ [2021-06-15]
-* [ ] set up and maintain restaurants and their menus
-* [ ] see their restaurant's orders and mark them fulfilled
+* [X] ~~*set up and maintain restaurants and their menus*~~ [2021-06-27]
+* [X] ~~*see their restaurant's orders and mark them fulfilled*~~ [2021-06-27]
 
 ### A user as Patron can
 
 * [X] ~~*select a restaurant*~~ [2021-06-15]
 * [X] ~~*order dishes from a menu*~~ [2021-06-15]
-* [ ] check out
+* [X] ~~*check out*~~ [2021-06-27]
 
 ## Implementation
 
@@ -73,7 +73,4 @@ There are two user roles: Proprietor and Patron.
 * [ ] [Once your app is complete, fill out this checklist.](https://goo.gl/forms/ULtKsxuzWomvXuTk2)
   * [ ] Fill in [spec.md](./spec.md)
 
-* [ ] Go wild! These are only the basic requirements — you're free to add on as much stuff as you'd like.
-  * [ ] Make an accessible app, with a rating
-  * [ ] Create a fictitious restaurant, "Imposters Bar & Grill", users, and orders for seed data
   * [ ] Write a full README.md and its appendant docs

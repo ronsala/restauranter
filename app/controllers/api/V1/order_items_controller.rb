@@ -1,4 +1,4 @@
-class OrderItemsController < ApplicationController
+class Api::V1::OrderItemsController < ApplicationController
   before_action :set_order_item, only: %i[ show update destroy ]
 
   # GET /order_items
@@ -16,9 +16,8 @@ class OrderItemsController < ApplicationController
   # POST /order_items.json
   def create
     @order_item = OrderItem.new(order_item_params)
-
     if @order_item.save
-      render :show, status: :created, location: @order_item
+      render json: OrderItemsSerializer.new(@order_item)
     else
       render json: @order_item.errors, status: :unprocessable_entity
     end
@@ -48,6 +47,6 @@ class OrderItemsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def order_item_params
-      params.require(:order_item).permit(:quantity, :item_id, :order_id)
+      params.require(:order_item).permit(:count, :item_id, :order_id)
     end
 end

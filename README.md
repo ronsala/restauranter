@@ -4,6 +4,7 @@ Restauranter is an open-source restaurant management web app. A user can act as 
 
 Patrons can ...
 
+* Choose a restaurant
 * order dishes from a menu
 * arrange to pick up or dine in
 * check out
@@ -12,17 +13,12 @@ Proprietors can ...
 
 * Sign up for an account
 * Set up a restaurant and menu
+* Edit a restaurant and menu
 * See their restaurant's orders and mark them fulfilled
 
-You can watch a video demo 
-<!-- TODO: -->
- here. For a transcript of the video, see 
-<!-- TODO -->
-video_demo_script.md.
+You can watch a video demo [here](https://www.youtube.com/watch?v=q5TxPFtOCv0).
 
-You can read a blog post about the creation of the app 
-<!-- TODO: -->
- here.
+You can read a blog post about the creation of the app [here](http://ronsala.net/makefile_006_writing_a_react-redux_app_with_redux_toolkit).
 
 ## Versions
 

@@ -1,6 +1,6 @@
 # Restauranter
 
-Restauranter is an open-source restaurant management web app. A user can act as a Patron and/or Proprietor. A corresponding React frontend can be found at [https://github.com/ronsala/restauranter-frontend](https://github.com/ronsala/restauranter-frontend)r
+Restauranter is an open-source restaurant management web app. A user can act as a Patron and/or Proprietor. A corresponding React frontend can be found at [https://github.com/ronsala/restauranter-frontend](https://github.com/ronsala/restauranter-frontend).
 
 Patrons can ...
 

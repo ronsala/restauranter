@@ -47,7 +47,7 @@ class Api::V1::UsersController < ApplicationController
     if @user && @user.authenticate(user_login_params[:password])
       render json: UserSerializer.new(@user), status: :accepted
     else
-      render json: { message: 'Invalid email or password' }, stauts: :unauthorized
+      render json: { message: 'Invalid email or password' }, status: :unauthorized
     end
   end
 

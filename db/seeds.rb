@@ -271,3 +271,11 @@ Item.create(
     } 
   ]
 )
+
+Restaurant.create(name: "Max Lite Food", street: '23 Thinkle Street', city: 'San Mateo', state: 'CA', desc: 'For the diet-conscious.', user_id: User.last.id, live: false)
+
+Restaurant.create(name: "The Square Meal", street: 'Tigin Road', city: 'Springdale', state: 'CA', desc: "We'll fill you up!", user_id: User.last.id, live: false)
+
+Restaurant.create(name: "Sea Food", street: '52 Harbor Way', city: 'Bangor', state: 'ME', desc: 'To be any fresher you have to be on a boat.', user_id: User.last.id, live: false)
+
+Restaurant.create(name: "Adam Street Eatery", street: '1 Adam Street', city: 'Bangor', state: 'ME', desc: 'Eat every meal like it is your last.', user_id: User.last.id, live: false)

@@ -32,17 +32,29 @@ You can either clone the repository directly from GitHub into a local directory 
 
 Once you Fork or Clone this app, cd into that directory and then execute:
 
+```command line
 bundle install
 rails db:migrate
+```
+
+To seed the database:
+
+```command line
+rails db:seed
+```
+
+To run the server:
+
+```command line
 rails s
+```
 
 ## Contributing
-
 
 Bug reports and pull requests are welcome on GitHub at [https://github.com/ronsala/restauranter-backend](https://github.com/ronsala/restauranter-backend). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
 ## Code of Conduct
 
-Everyone interacting in the TriviaTrader project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the code of conduct.
+Everyone interacting in the project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the code of conduct.
 
 ## License
 
@@ -51,4 +63,5 @@ This app is available as open source under the terms of the MIT License.
 ## Acknowledgments
 
 Flatiron School for instruction and community.
+Restauranters for work-ethic-inspiration.
 My spouse for support and cheerleading.
